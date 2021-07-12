@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-image: linear-gradient(30deg, black, rgb(41, 41, 209), purple, orange);
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.wraper {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 100vh;
+}
+
+.info {
+    margin-top: 20px;
+    text-align: center;
+
+    h1 {
+        font-size: 2.5rem;
+        color: rgb(233, 233, 233);
+        text-shadow: 2px 2px 4px rgb(0, 0, 0);
+        font-family: 'Dancing Script', cursive;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+}
+
+.ball-img {
+    position: relative;
+    height: 90vh;
+
+    img {
+        position: absolute;
+        top: 30px;
+        left: 340px;
+        width: 300px;
+        height: auto;
+        cursor: pointer;
+    }
+}
+
+.question-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+        margin-bottom: 10px;
+        font-size: 36px;
+        text-transform: uppercase;
+    }
+
+    input {
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 8px;
+        font-family: 'Montserrat Alternates', sans-serif;
+        background-image: linear-gradient(45deg, black, rgb(41, 41, 209), purple, black);
+        color: white;
+        border: solid white 1px;
+        width: 50%;
+    }
+
+    .answer span {
+        font-weight: bold;
+    }
+
+    .error {
+        color: rgb(255, 0, 8);
+        font-weight: bold;
+    }
+}
+
+.shake-animation {
+    animation: shake 1s 1;
+}
+
+@keyframes shake {
+    0% {
+        left: 320px;
+    }
+
+    20% {
+        left: 360px;
+    }
+
+    40% {
+        left: 320px;
+    }
+
+    60% {
+        left: 360px;
+    }
+
+    80% {
+        left: 320px;
+    }
+
+    100% {
+        left: 360px;
+    }
+}
